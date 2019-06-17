@@ -16,10 +16,10 @@ class CreateTransactionsTable extends Migration
         Schema::create('transactions', function (Blueprint $table) {
             $table->increments('transact_id');
             $table->datetime('transact_date');
-            $table->unsignedBigInteger('fee_id');
-            $table->unsignedBigInteger('userd_id');
-            $table->unsignedBigInteger('student_id');
-            $table->unsignedBigInteger('s_fee_id');
+            $table->integer('fee_id')->unsigned();
+            $table->integer('user_id')->unsigned();
+            $table->integer('student_id')->unsigned();
+            $table->integer('s_fee_id')->unsigned();
             $table->float('paid',8,2);
             $table->string('remark',50)->nullable();
             $table->string('description',200)->nullable();

@@ -15,12 +15,12 @@ class CreateClassesTable extends Migration
     {
         Schema::create('classes', function (Blueprint $table) {
             $table->increments('class_id');
-            $table->unsignedBigInteger('academic_id');
-            $table->unsignedBigInteger('level_id');
-            $table->unsignedBigInteger('shift_id');
-            $table->unsignedBigInteger('time_id');
-            $table->unsignedBigInteger('group_id');
-            $table->unsignedBigInteger('batch_id');
+            $table->integer('academic_id')->unsigned();
+            $table->integer('level_id')->unsigned();
+            $table->integer('shift_id')->unsigned();
+            $table->integer('time_id')->unsigned();
+            $table->integer('group_id')->unsigned();
+            $table->integer('batch_id')->unsigned();
             $table->date('start_date');
             $table->date('end_date');
             $table->boolean('active');

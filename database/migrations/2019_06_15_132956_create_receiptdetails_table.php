@@ -14,9 +14,9 @@ class CreateReceiptdetailsTable extends Migration
     public function up()
     {
         Schema::create('receiptdetails', function (Blueprint $table) {
-            $table->unsignedBigInteger('receipt_id');
-            $table->unsignedBigInteger('student_id');
-            $table->unsignedBigInteger('transact_id');
+            $table->integer('receipt_id')->unsigned();
+            $table->integer('student_id')->unsigned();
+            $table->integer('transact_id')->unsigned();
         });
     }
 

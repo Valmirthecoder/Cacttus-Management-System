@@ -17,7 +17,7 @@ class CreateLevelTable extends Migration
             $table->increments('level_id');
             $table->string('level',100);
             $table->string('description',200)->nullable();
-            $table->unsignedBigInteger('program_id');
+            $table->integer('program_id')->unsigned();
             $table->foreign('program_id')->references('program_id')->on('programs');
         });
     }

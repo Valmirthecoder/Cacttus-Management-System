@@ -33,7 +33,7 @@ class CreateStudentsTable extends Migration
             $table->date('dateregistered');
             $table->unsignedBigInteger('user_id');
             $table->string('photo',200)->nullable();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('student_id')->references('id')->on('users');
             //$table->timestamps();
         });
     }

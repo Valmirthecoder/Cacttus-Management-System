@@ -15,8 +15,8 @@ class CreateStatusesTable extends Migration
     {
         Schema::create('statuses', function (Blueprint $table) {
             $table->increments('status_id');
-            $table->unsignedBigInteger('student_id');
-            $table->unsignedBigInteger('class_id');
+            $table->integer('student_id')->unsigned();
+            $table->integer('class_id')->unsigned();
             $table->foreign('student_id')->references('student_id')->on('students');
             $table->foreign('class_id')->references('class_id')->on('classes');
         });
