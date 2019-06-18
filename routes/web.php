@@ -11,9 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WelcomeController@index')->name('welcomescreen');
+Route::get('/loginwithoffice', 'WelcomeController@loginWithOffice')->name('loginwithoffice');
+
+Route::get('/callback', 'WelcomeController@callback')->name('callback');
+
+Route::get('/student', 'LoggedInController@index')->name('student');
 
 
 Route::get('/dashboard', function () {

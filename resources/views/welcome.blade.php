@@ -7,7 +7,7 @@
   <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
   <meta name="author" content="GeeksLabs">
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-  {{!!HTML::image('img/favicon.png)!!}}
+  {{!!HTML::image('img/favicon.png')!!}}
 
   <title>Cacttus System Management</title>
 
@@ -30,7 +30,7 @@
 
   <div class="container">
 
-    <form class="login-form" action="index.html">
+    <form class="login-form" action="{{route('loginwithoffice')}}">
       <div class="login-wrap">
         <p class="login-img"><i class="icon_lock_alt"></i></p>
         <div class="input-group">
@@ -46,12 +46,9 @@
                 <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
             </label>
         <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
-        <button class="btn btn-info btn-lg btn-block" type="submit">Signup</button>
+        <!--button class="btn btn-info btn-lg btn-block" type="submit">Signup</button-->
       </div>
     </form>
-    
-
-
 </body>
 
 </html>
