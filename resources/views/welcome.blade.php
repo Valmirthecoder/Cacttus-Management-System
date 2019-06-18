@@ -7,7 +7,7 @@
   <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
   <meta name="author" content="GeeksLabs">
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-  {{!!HTML::image('img/favicon.png')!!}}
+  {{-- {{ !!HTML::image('img/favicon.png')!! }}  --}}
 
   <title>Cacttus System Management</title>
 
