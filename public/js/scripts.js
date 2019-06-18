@@ -41,12 +41,12 @@ function initializeJS() {
             var wSize = jQuery(window).width();
             if (wSize <= 768) {
                 jQuery('#container').addClass('sidebar-close');
-                jQuery('#sidebar > ul').hide();
+                jQuery('#sidebar > ul').hide('slow');
             }
 
             if (wSize > 768) {
                 jQuery('#container').removeClass('sidebar-close');
-                jQuery('#sidebar > ul').show();
+                jQuery('#sidebar > ul').show('slow');
             }
         }
         jQuery(window).on('load', responsiveView);
@@ -61,13 +61,13 @@ function initializeJS() {
             jQuery('#sidebar').css({
                 'margin-left': '-180px'
             });
-            jQuery('#sidebar > ul').hide();
+            jQuery('#sidebar > ul').hide('slow');
             jQuery("#container").addClass("sidebar-closed");
         } else {
             jQuery('#main-content').css({
                 'margin-left': '180px'
             });
-            jQuery('#sidebar > ul').show();
+            jQuery('#sidebar > ul').show('slow');
             jQuery('#sidebar').css({
                 'margin-left': '0'
             });

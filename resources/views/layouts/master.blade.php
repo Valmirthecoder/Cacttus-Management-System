@@ -8,7 +8,7 @@
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
   <link rel="shortcut icon" href="img/favicon.png">
 
-  <title> Cacctus Dashboard</title>
+  <title> Cacttus Dashboard</title>
   {!!HTML::style('css/bootstrap.min.css')!!}
   {!!HTML::style('css/bootstrap-theme.css')!!}
   {!!HTML::style('css/elegant-icons-style.css')!!}
